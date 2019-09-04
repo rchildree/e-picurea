@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans+SC|Alegreya+Sans:400,700&display=swap&subset=greek,greek-ext');
+
 * {
 	font-family:  "Alegreya","ZephText", "Brill","Garamond Premier Pro", "Minion Pro", "GFS Neohellenic", system-ui, -apple-system, BlinkMacSystemFont;
 	padding: 0;
@@ -78,7 +80,8 @@ em {
 }
 
 .smallcaps {
-	font-feature-settings: 'c2sc', 'smcp', 'onum', 'pnum';
+	font-family: "Alegreya Sans SC";
+	/* font-feature-settings: 'c2sc', 'smcp', 'onum', 'pnum'; */
 }
 
 #centerer {
@@ -94,6 +97,7 @@ em {
 	overflow: hidden;
 	z-index: 250;
 }
+
 ul{
 	list-style-type: none;
 	line-height: 1.1rem;
@@ -102,6 +106,10 @@ ul{
 	color: #213450;
 	width: 24rem;
 	padding-left: 25px;
+}
+
+li{
+	font-family: "Alegreya Sans";
 }
 
 h1 {
