@@ -1,13 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans+SC|Alegreya+Sans:400,700&display=swap&subset=greek,greek-ext');
+@font-face {
+    font-family: 'gfs_neohellenicregular';
+    src: url('gfsneohellenic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gfs_neohellenicbold';
+	src: url('gfsneohellenicbold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
 
 * {
-	font-family:  "Alegreya","ZephText", "Brill","Garamond Premier Pro", "Minion Pro", "GFS Neohellenic", system-ui, -apple-system, BlinkMacSystemFont;
 	padding: 0;
 	margin: 0;
 	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
 }
 
 body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont;
 	background-color: #FFFFFF;
 }
 
@@ -44,11 +56,12 @@ span[data-p]::before {
 
 span.number {
 	display: run-in;
-	font-size: .6rem;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont;
+	font-size: .4rem;
 	font-weight: bold;
 	color: red;
-	padding: 0 5px;
-	font-feature-settings: "lnum", "tnum";
+	padding: 0;
+	font-feature-settings: "lnum", "pnum";
 }
 
 #container span:hover {
@@ -69,10 +82,12 @@ span.number {
 }
 
 .entry{
-	font-weight: bold;
+	font-family: 'gfs_neohellenicbold';
 	font-size: 1.3rem;
 	line-height: 1.5rem;
 }
+
+b {font-family: 'gfs_neohellenicbold';}
 
 em {
 	font-style: italic;
@@ -80,8 +95,7 @@ em {
 }
 
 .smallcaps {
-	font-family: "Alegreya Sans SC";
-	/* font-feature-settings: 'c2sc', 'smcp', 'onum', 'pnum'; */
+	font-feature-settings: 'c2sc', 'smcp', 'onum', 'pnum';
 }
 
 #centerer {
@@ -109,7 +123,7 @@ ul{
 }
 
 li{
-	font-family: "Alegreya Sans";
+	/* font-family: "Alegreya Sans"; */
 }
 
 h1 {
@@ -123,6 +137,7 @@ h1 {
 }
 
 #container {
+	font-family: "gfs_neohellenicregular";
 	margin: 60px auto 150px;
 	max-width: 28rem;
 }
