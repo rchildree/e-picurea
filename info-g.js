@@ -116,7 +116,7 @@ function doPOS(tag) {
 	} else if (tag[5] === "n") { // infinitive: 
 		answer = `${wordPos[3]} ${wordPos[4]} ${wordPos[5]}`;
 	} else if (tag[0] === "v") { // verbs: 12 3 5 4
-		answer = `${wordPos[1]} ${wordPos[2]} ${wordPos[3]} ${wordPos[4]} ${wordPos[5]}`;
+		answer = `${wordPos[1]}${wordPos[2]} ${wordPos[3]} ${wordPos[4]} ${wordPos[5]}`;
 	} else if (tag[0]) { // the rest
 		answer = wordPos[0];
 	};
@@ -136,7 +136,7 @@ doInfo = function() {
 	let infoBox = 
 		`
 		<li><span class="entry infoboxGreek">${wordForm}</span> &nbsp; <span class="smallcaps">${wordPos}</span></li>
-		<li><b>${wordDict}</b> ${wordDef}</li>
+		<li><b>${wordDict}</b> &nbsp; <em>${wordDef}</em></li>
 		`;
 	document.querySelector("#info").innerHTML = infoBox;
 }

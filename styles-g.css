@@ -1,18 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i&display=swap'); */
-
-@font-face {
-    font-family: 'gfs_neohellenicregular';
-    src: url('gfsneohellenic-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gfs_neohellenicbold';
-	src: url('gfsneohellenicbold-webfont.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap&subset=greek,greek-ext');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i&display=swap&subset=latin-ext');
 
 * {
 	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
@@ -21,12 +8,11 @@
 }
 
 body {
-	font-family: "Nunito Sans", system-ui, -apple-system, BlinkMacSystemFont;
+	font-family: "Crimson Pro", system-ui, -apple-system, BlinkMacSystemFont;
 	background-color: #FFFFFF;
 }
 
 p {
-	line-height: calc(40px + (50 - 30) * ((100vw - 750px) / (1600 - 750)));
 	position: relative;
 }
 
@@ -59,11 +45,11 @@ span[data-p]::before {
 span.number {
 	display: run-in;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont;
-	font-size: .4rem;
+	font-size: .5rem;
 	font-weight: bold;
 	color: red;
 	padding: 0;
-	font-feature-settings: "lnum", "pnum";
+	font-variant-numeric: lining-nums proportional-nums;
 }
 
 #container span:hover {
@@ -73,6 +59,7 @@ span.number {
 
 #DL10 > div {
 	text-indent: 1.5rem;
+	line-height: calc(40px + (50 - 40) * ((100vw - 750px) / (1600 - 750)));
 }
 
 .indent {
@@ -84,12 +71,12 @@ span.number {
 }
 
 .entry{
-	font-family: 'gfs_neohellenicbold';
+	font-family: 'Alegreya';
 	font-size: 1.3rem;
 	line-height: 1.5rem;
 }
 
-b {font-family: 'gfs_neohellenicbold';}
+b {font-family: 'Alegreya'}
 
 em {
 	font-style: italic;
@@ -97,7 +84,8 @@ em {
 }
 
 .smallcaps {
-	font-feature-settings: 'c2sc', 'smcp', 'onum', 'pnum';
+	font-variant-caps: all-small-caps;
+	font-variant-numeric: oldstyle-nums proportional-nums;
 }
 
 #centerer {
@@ -125,7 +113,7 @@ ul{
 }
 
 li{
-	font-size: .7rem;
+	font-size: .9rem;
 }
 
 h1 {
@@ -139,7 +127,7 @@ h1 {
 }
 
 #container {
-	font-family: "gfs_neohellenicregular";
+	font-family: 'Alegreya';
 	margin: 60px auto 150px;
 	max-width: 28rem;
 }
