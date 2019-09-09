@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap&subset=greek,greek-ext');
-@import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro:500,500i&display=swap&subset=latin-ext');
 
 * {
 	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
